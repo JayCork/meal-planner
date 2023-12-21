@@ -16,7 +16,9 @@
 			"extensions": [
 				"figma.figma-vscode-extension",
 				"GoogleCloudTools.cloudcode",
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"tombonnike.vscode-status-bar-format-toggle"
 			],
 			"settings": {
 				"editor.formatOnSave": false,

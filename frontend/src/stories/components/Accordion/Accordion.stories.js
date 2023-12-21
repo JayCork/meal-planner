@@ -1,21 +1,19 @@
-import {Accordion} from './Accordion';
+import { Accordion } from "./Accordion";
 
 export default {
-  title: 'Meals/Accordion',
+  title: "Meals/Accordion",
   component: Accordion,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
 export const Defualt = {
   args: {
     name: "Tandori Chicken",
-        
   },
 };
-

@@ -13,6 +13,10 @@
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.47.0",
+    "@styled-icons/boxicons-solid": "^10.47.0",
+    "@styled-icons/entypo": "^10.46.0",
+    "@styled-icons/material": "^10.47.0",
+    "@styled-icons/remix-fill": "^10.46.0",
     "date-fns": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -31,10 +35,12 @@
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "prettier": "3.1.1",
     "prop-types": "^15.8.1",
     "storybook": "^7.6.5",
     "styled-components": "^6.1.1",

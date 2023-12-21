@@ -1,14 +1,14 @@
-import { NextMeal } from './NextMeal';
+import { NextMeal } from "./NextMeal";
 
 export default {
-  title: 'Meals/NextMeal',
+  title: "Meals/NextMeal",
   component: NextMeal,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
 };
 
@@ -17,11 +17,10 @@ export const Meal = {
     name: "Tandori Chicken",
     totalCookingTime: 80,
     targetedServingTime: "19:00",
-    imgUrl: 'https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg',
+    imgUrl: "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
     calories: 215,
     activeCookingTime: 10,
     preperationTime: 20,
-    
   },
 };
 
@@ -30,11 +29,9 @@ export const HasPreparationTime = {
     name: "Carbonara",
     totalCookingTime: 80,
     targetedServingTime: "19:00",
-    imgUrl: 'https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg',
+    imgUrl: "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
     calories: 215,
     activeCookingTime: 10,
     preRequisiteTime: 10,
-    
   },
 };
-
