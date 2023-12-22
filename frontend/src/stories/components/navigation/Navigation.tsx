@@ -4,6 +4,7 @@ import { UserCircle } from "@styled-icons/boxicons-solid/UserCircle";
 import { FoodMenu } from "@styled-icons/boxicons-solid/FoodMenu";
 import { Fridge } from "@styled-icons/remix-fill/Fridge";
 import styled from "styled-components";
+import { ReactNode } from "react";
 
 const NavItemStyled = styled.li`
   list-style-type: none;
@@ -51,7 +52,7 @@ const IconContainer = styled.div<{ $selected: boolean }>`
 
 interface NavItemProps {
   href: string;
-  icon: unknown;
+  icon: ReactNode;
   label: string;
   selected?: boolean;
 }
@@ -86,8 +87,13 @@ const OrderedListStyled = styled.ol`
   flex: 1 0 0;
 `;
 
-export const Navigation = (props) => {
-  const { id, selected } = props;
+interface NavigationProps {
+  id: string;
+  selected?: string;
+}
+
+export const Navigation = (props: NavigationProps) => {
+  const { id, selected = false } = props;
 
   const views = [
     { href: "/", label: "Dash", icon: <Dashboard /> },
@@ -103,7 +109,7 @@ export const Navigation = (props) => {
         {views.map((view) => {
           return (
             <NavItem
-              key={view.label}
+              key={`${id}-${view.label}`}
               href={view.href}
               label={view.label}
               icon={view.icon}
